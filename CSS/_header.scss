@@ -1,0 +1,102 @@
+header {
+  background-color: $color_background;
+  width: 98%;
+  height: 60px;
+  grid-area: _header;
+  margin: 10px 10px ;
+  padding: 10px 10px 10px 15px;
+  border-radius: 30px;
+  @include flexr;
+  justify-content: space-between;
+  box-shadow: $box-shado_1;
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Brand Name
+  .brand_logo {
+    font-family: $font_logo;
+    font-size: $size_logo;
+    //font-weight: bold;
+    color: $color_logo;
+
+  }
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Nav Bar start here
+
+  .nav {
+    position: relative;
+    font-size: 24px;
+    @include flexr;
+    justify-content: space-between;
+
+    .link {
+      display: inline-block;
+      position: relative;
+      text-decoration: none;
+      padding: 10px 10px;
+      margin-left: 10px;
+      color: $color_nav;
+      font-family: $font_nav;
+      font-size: $size_nav;
+    }
+
+    .link-wrapper {
+      position: relative;
+      display: block;
+      padding: 10px 0;
+
+      .activated {
+        border-bottom: 3px solid $color_nav;
+        background-color: $color_activated;
+        border-radius: 10px 10px 0 0;
+        font-weight: bold;
+      }
+
+      .hover-1 {
+        &:after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          bottom: 0;
+          left: 0;
+          background-color: $color_nav;
+          transform: scaleX(0);
+          transform-origin: bottom right;
+          transition: transform 0.3s;
+        }
+
+        &:hover {
+          &:after {
+            transform-origin: bottom left;
+            transform: scaleX(1);
+          }
+        }
+      }
+    }
+  }
+
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Drop Down Bar Start here
+  .user {
+    width: 200px;
+    height: 50px;
+    border: none;
+    box-shadow: $box-shado_1;
+    border-radius: 30px;
+    @include flexr;
+
+    //>>>>>> img
+    .user_pic {
+      background-image: $user_pic;
+      background-size: cover;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-left: 5px;
+      box-shadow: $box-shado_2;
+    }
+    //>>>>>> user name
+    .user_name {
+      margin-left: 10px;
+      font-family: $font_nav;
+      font-weight: bold;
+      font-size: $size_user_name;
+    }
+  }
+}

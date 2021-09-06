@@ -1,0 +1,98 @@
+.home_main {
+  width: 100%;
+  height: auto;
+  padding: 0 10px;
+  grid-area: _main;
+  @include flexr;
+  justify-content: center;
+
+  .card {
+    border-radius: 2px;
+    box-shadow: $box-shado_3;
+    height: 530px;
+  }
+
+  .card1 {
+    width: 25%;
+    overflow: hidden;
+    box-shadow: none;
+    @include flexc;
+    flex-direction: column-reverse;
+
+    .farm_products {
+      position: relative;
+      left: 0px;
+      width: 150%;
+      height: 50%;
+      background-color: aqua;
+      box-shadow: $box-shado_3;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .farm_pic {
+      width: 100%;
+      height: 50%;
+      box-shadow: $box-shado_3;
+      background-image: $farm_pic;
+      background-size: cover;
+      border-radius: 5px;
+    }
+  }
+
+  .card2 {
+    width: 50%;
+    margin: 0 10px;
+  }
+
+  .card3 {
+    width: 25%;
+    padding: 10px;
+    box-shadow: $box-shado_3;
+    border-radius: 5px;
+    @include flexc;
+    background-color: $color_background;
+
+    .user_logo_contain {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      box-shadow: $box-shado_2;
+      @include flexc;
+      margin: 10px 0 30px 0;
+
+      .user_logo1 {
+        width: 200px;
+        height: 200px;
+        inset: 0;
+        margin: auto;
+        //position: relative;
+        //top: 10px;
+        border-radius: 50%;
+        background-image: $user_pic;
+        background-size: cover;
+        box-shadow: $box-shado_2;
+      }
+    }
+
+    .user_info {
+      width: 90%;
+      height: auto;
+      @include flexc;
+      text-align: center;
+      font-family: $font_info;
+      color: $color_text;
+      font-size: $size_text;
+
+      .item {
+        margin-bottom: 10px;
+        padding: 5px;
+        border-bottom: 2px solid $color_nav;
+        width: 100%;
+        .col {
+          font-weight: bold;
+          color: $color_nav;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GreenHouse : Configuration</title>
+  </head>
+  <body>
+    
+    <header>
+      <div class="brand_logo">GreenHouse</div>
+      <div class="nav">
+        <div class="link-wrapper">
+          <a class="link hover-1" href="index.html">Accueille</a>
+        </div>
+        <div class="link-wrapper">
+          <a class="link hover-1" href="Statistiques.html">Statistiques</a>
+        </div>
+        <div class="link-wrapper">
+          <a class="link hover-1 " href="TDB.html">Tableau de Bord</a>
+        </div>
+        <div class="link-wrapper">
+          <a class="link hover-1 activated" href="Configuration.html"
+            >Configuration</a
+          >
+        </div>
+      </div>
+      <div class="user">
+        <div class="user_pic"></div>
+        <span class="user_name">Lorem ipsum </span>
+      </div>
+    </header>
+
+    <main class="User_main">
+      <aside class="side-bar">
+        <a href="#profile">Profile</a>
+        <a href="#settings">Settings</a>
+        <a href="#contact_us">Contact</a>
+        <a href="#about_us">About Us</a>
+        <a href="#term_of_use">Term Of Use</a>
+        <a href="#sing_out">Sing Out</a>
+      </aside>
+      <main class="main-content">
+        <section class="profile" id="profile">
+          <div class="header">User Profile</div>
+          <form class="info">
+            <div class="case">
+              <div class="inner_case">
+                <label for="name">First Name :</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="user_first_name"
+                  placeholder="Ali"
+                />
+              </div>
+              <div class="inner_case">
+                <label for="email">Email :</label>
+                <input
+                  type="email"
+                  id="mail"
+                  name="user_email"
+                  placeholder=""
+                />
+              </div>
+              <div class="inner_case">
+                <label for="password">Password :</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="user_password"
+                  placeholder=""
+                />
+              </div>
+              <div class="inner_case">
+                <label for="cars">Choose a car :</label>
+                <select id="cars" name="cars" placeholder="">
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="fiat">Fiat</option>
+                  <option value="audi">Audi</option>
+                </select>
+              </div>
+            </div>
+            <div class="case">
+              <div class="inner_case">
+                <label for="name">Last Name :</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="user_last_name"
+                  placeholder="Ait Naser"
+                />
+              </div>
+              <div class="inner_case">
+                <label>Date of birth :</label>
+                <input type="date" />
+              </div>
+              <div class="inner_case">
+                <label for="password">Confirm :</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="user_password"
+                  placeholder=""
+                />
+              </div>
+              <div class="inner_case">
+                <label class="file" for="myfile">Select a file :</label>
+                <input
+                  type="file"
+                  id="file"
+                  class="inputfile"
+                  name="myfile"
+                  placeholder=""
+                />
+              </div>
+            </div>
+          </form>
+        </section>
+        <section class="settings" id="settings">
+          <div class="header">Settings</div>
+          <form class="info">
+            <div class="case">
+              <div class="inner_case">
+                <label for="name">Farm Name :</label>
+                <input
+                  type="text"
+                  id="farm_name"
+                  name="farm_name"
+                  placeholder=""
+                />
+              </div>
+              <div class="inner_case">
+                <label for="cars">Type :</label>
+                <select id="farm_type" name="type" placeholder="">
+                  <option value="apiary">Apiary</option>
+                  <option value="aquaculture">Aquaculture</option>
+                  <option value="commercial">Commercial</option>
+                  <option value="cooperative">Cooperative</option>
+                  <option value="dairy">Dairy</option>
+                  <option value="dry">Dry</option>
+                  <option value="family">Family</option>
+                  <option value="flower">Flower</option>
+                  <option value="hay">Hay</option>
+                  <option value="hobby">Hobby</option>
+                  <option value="micro">Micro</option>
+                  <option value="orchard">Orchard</option>
+                  <option value="organic">Organic</option>
+                  <option value="poultry">Poultry</option>
+                  <option value="ranch">Ranch</option>
+                  <option value="rice">Rice</option>
+                  <option value="urban">Urban</option>
+                  <option value="vineyard">Vineyard</option>
+                </select>
+              </div>
+              <div class="inner_case">
+                <label for="email">Location :</label>
+                <input
+                  type="text"
+                  id="Location"
+                  name="Location"
+                  placeholder=""
+                />
+              </div>
+            </div>
+            <div class="case">
+              <div class="inner_case">
+                <label for="name">Farm Owner :</label>
+                <input
+                  type="text"
+                  id="farm_owner"
+                  name="farm_owner"
+                  placeholder=""
+                />
+              </div>
+              <div class="inner_case">
+                <label for="name">Size :</label>
+                <input
+                  type="text"
+                  id="farm_size"
+                  name="farm_size"
+                  placeholder=""
+                />
+              </div>
+              <div class="inner_case">
+                <label for="name">Last Name :</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="user_last_name"
+                  placeholder="Ait Naser"
+                />
+              </div>
+            </div>
+          </form>
+        </section>
+        <section id="contact_us" class="contact_us">
+          <div class="header">Contact Us</div>
+          <div class="main contact_info">
+            <form>
+              <input
+                class="in_1"
+                type="text"
+                placeholder="Full Name"
+                required
+              />
+              <input class="in_2" type="text" placeholder="Subject" required />
+              <textarea>Some text...</textarea>
+              <input class="in_3" type="submit" value="Send" />
+            </form>
+          </div>
+        </section>
+        <section id="about_us" class="about_us">
+          <div class="header">About Us</div>
+          <div class="main about_text">
+            <img src="CSS/img/aboutus.png" />
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, fugit voluptatum enim facere temporibus possimus adipisci obcaecati et, sed perspiciatis saepe, officiis quaerat consectetur numquam!
+            </p>
+          </div>
+        </section>
+        <section class="term_of_use" id="term_of_use">
+          <div class="header">Term Of Use</div>
+          <div class="main term_text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est soluta
+            aut itaque dolores impedit, ducimus rem nisi voluptatibus laboriosam
+            repudiandae porro cum aliquid deleniti recusandae laudantium ab
+            totam alias nobis! Officia asperiores dignissimos, maiores quasi
+            vitae ullam quisquam beatae ex voluptatem amet dolorum reprehenderit
+            neque ipsum, optio, in quod similique consequatur distinctio
+            consequuntur velit mollitia odio? Voluptatibus fugit fugiat aliquam
+            labore ipsam recusandae tempore similique corrupti? At voluptates
+            vitae perspiciatis adipisci molestiae iste doloremque odit molestias
+            harum temporibus ipsam corrupti obcaecati, omnis in nesciunt et
+            deleniti voluptate exercitationem repellat, debitis unde similique
+            explicabo reiciendis! Soluta dolores alias esse! Sequi magni nobis
+            corrupti vel saepe quisquam animi numquam assumenda rerum, delectus
+            excepturi, itaque facilis illum. Numquam explicabo itaque commodi
+            nesciunt necessitatibus vel voluptates voluptas autem dolor at
+            repellendus adipisci fugiat labore eaque, impedit ipsum recusandae.
+            Deserunt fugiat deleniti autem nihil ipsam eum neque, sequi,
+            voluptatem, inventore recusandae commodi quis assumenda! Officia,
+            eum laudantium officiis exercitationem esse deserunt? Facilis
+            officiis rerum expedita ea odio voluptatem ad voluptas ducimus, iste
+            delectus dolores omnis itaque animi distinctio tempora mollitia nisi
+            iure. Officia quia, tempora accusamus accusantium totam laboriosam
+            omnis quidem quis ipsum tenetur ipsa laudantium ea eum
+            exercitationem corrupti quo iure nulla dolor cupiditate doloribus at
+            vel facere! Illum aliquid repudiandae vitae tenetur ipsa dolorem
+            sunt ullam. Quod quas, est minus eaque, facere culpa doloremque
+            eligendi maiores tenetur quia nam cupiditate aliquam enim? Ad
+            numquam nobis excepturi quae error minus laboriosam maiores
+            accusantium laborum veniam. Repudiandae voluptates autem commodi
+            modi itaque inventore ullam eius.
+          </div>
+        </section>
+      </main>
+    </main>
+    <link rel="Stylesheet" href="CSS/index.css" />
+  </body>
+</html>

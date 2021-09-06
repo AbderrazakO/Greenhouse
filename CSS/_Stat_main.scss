@@ -1,0 +1,121 @@
+@mixin dashcard {
+    margin: 0 10px;
+    width: 95%;
+    height: 95%;
+    background-color: $color_background;
+    box-shadow: $box-shado_3;
+    border-radius: 5px;
+    padding: 10px;
+
+    .head{
+      width: 90%;
+      height: 25%;
+      padding: 5px 0 5px 10px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-family: $font_card;
+      font-size: $size_default;
+      font-weight: bold;
+      border-bottom: 1px solid $color_text;
+
+      img{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+    }
+    .info{
+      width: 95%;
+      height: 75%;
+      @include flexr;
+      justify-content: center;
+      font-family:'Times New Roman', Times, serif;
+      color: $color_text;
+      font-size: $size_values;
+
+      .symbole{
+        color: $color_symbole;
+        margin-left: 10px;
+        font-weight: bold;
+      }
+    }
+  
+}
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Dia start
+@mixin Dia {
+  border-radius: 5px;
+  width: 98%;
+  height: 48%;
+  box-shadow: $box-shado_3;
+}
+
+.Dash_main {
+  grid-area: _main;
+  width: 100%;
+  height: 520px;
+  @include flexr;
+  justify-content: center;
+  margin: 10px auto;
+
+  .section-1 {
+    width: 40%;
+    height: 520px;
+    display: grid;
+    margin-left: 10px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "_card1 _card2" "_card3 _card4";
+
+    .card1 {
+      grid-area: _card1;
+      @include dashcard;
+      .head{
+        border-bottom:1px solid $color_nav;
+      }
+    }
+
+    .card2 {
+      grid-area: _card2;
+      @include dashcard;
+      .head{
+        border-bottom:1px solid $color_logo;
+      }
+    }
+
+    .card3 {
+      grid-area: _card3;
+      @include dashcard;
+      .head{
+        border-bottom:1px solid $color_2;
+      }
+    }
+
+    .card4 {
+      grid-area: _card4;
+      @include dashcard;
+      .head{
+        border-bottom:1px solid $color_3;
+      }
+    }
+
+  }
+
+  .section-2 {
+    width: 60%;
+    height: 520px;
+    padding: 0 10px;
+
+    .diag1 {
+      @include Dia;
+      margin-bottom: 5px;
+      padding: 10px;
+    }
+    .diag2 {
+      @include Dia;
+      margin-top: 5px;
+      padding: 10px;
+    }
+  }
+}

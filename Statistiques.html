@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GreenHouse : Statistiques</title>
+    <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Javascript <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script type="text/javascript" src="stat.js"></script>
+     <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> End <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-->
+  </head>
+
+  <body class="Dash">
+    <header>
+      <div class="brand_logo">GreenHouse</div>
+      <div class="nav">
+        <div class="link-wrapper">
+          <a class="link hover-1" href="index.html">Accueille</a>
+        </div>
+        <div class="link-wrapper">
+          <a class="link hover-1 activated" href="Statistiques.html"
+            >Statistiques</a
+          >
+        </div>
+        <div class="link-wrapper">
+          <a class="link hover-1" href="TDB.html">Tableau de Bord</a>
+        </div>
+        <div class="link-wrapper">
+          <a class="link hover-1" href="Configuration.html">Configuration</a>
+        </div>
+      </div>
+      <div class="user">
+        <div class="user_pic"></div>
+        <span class="user_name">Lorem ipsum </span>
+      </div>
+    </header>
+
+    <main class="Dash_main" id="style-7">
+      <div class="section-1">
+        <div class="card1">
+          <div class="head"><img src="CSS/img/01.png" />Luminosité</div>
+          <div class="info">
+            <div class="valeur" id="luminosite_valeur">00</div>
+            <div class="symbole">lx</div>
+          </div>
+        </div>
+        <div class="card2">
+          <div class="head">
+            <img src="CSS/img/02.png" />Température de la Serre
+          </div>
+          <div class="info">
+            <div class="valeur" id="temperature_valeur">00</div>
+            <div class="symbole">°C</div>
+          </div>
+        </div>
+        <div class="card3">
+          <div class="head">
+            <img src="CSS/img/03.png" />Humidité de la Serre
+          </div>
+          <div class="info">
+            <div class="valeur" id="humidite_serre_valeur">00</div>
+            <div class="symbole">%</div>
+          </div>
+        </div>
+        <div class="card4">
+          <div class="head"><img src="CSS/img/04.png" />Humidité de Sol</div>
+          <div class="info">
+            <div class="valeur" id="humidite_sol_valeur">00</div>
+            <div class="symbole">%</div>
+          </div>
+        </div>
+      </div>
+      <div class="section-2">
+        <div class="diag1" id="curve_chart_1">
+          <canvas
+            id="line-chart1" class="chart"
+            style="width: 98%;
+            max-height: 240px;"
+          ></canvas>
+        </div>
+        <div class="diag2" id="curve_chart_2">
+          <canvas
+            id="line-chart2" class="chart"
+            style="width: 98%;
+            max-height: 240px;"
+          ></canvas>
+        </div>
+      </div>
+    </main>
+    <!--  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CSS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-->
+    <link rel="Stylesheet" href="CSS/index.css" />
+    <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> End <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-->
+  </body>
+</html>
